@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-123456789"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-123456789');
+</script>
+
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Ramos | Estética Avançada</title>
@@ -442,6 +454,37 @@
 
             .contact-image, .about-image { order: -1; }
         }
+      /* Testimonials */
+.testimonials-carousel {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial {
+    display: none;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial h4 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
     </style>
 </head>
 <body>
@@ -457,7 +500,14 @@
             <li><a href="#servicos">Meus Serviços</a></li>
             <li><a href="#sobre">Sobre Mim</a></li>
             <li><a href="#duvidas">Dúvidas</a></li>
-            <li><a href="#contato" class="btn">Agendar Avaliação</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+            <li><a 
+  href="#contato"
+  class="btn"
+  onclick="gtag('event','conversion',{'send_to':'AW-123456789/AGENDA123'})"
+>
+  Agendar Avaliação
+</a></li>
         </ul>
     </nav>
 
@@ -487,7 +537,10 @@
                     <h3>Toxina Botulínica (Botox) Preventivo e Full Face</h3>
                     <p>A toxina botulínica é indicada para prevenção e tratamento das rugas e linhas de expressão, promovendo rejuvenescimento facial com naturalidade.</p>
                   <p>O procedimento atua no relaxamento controlado da musculatura, preservando a expressividade e prevenindo o envelhecimento precoce.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Preenchimento Labial." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Preenchimento Labial." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
 
@@ -508,7 +561,10 @@
                   <p>Utiliza fios absorvíveis e biocompatíveis, com resultados naturais e progressivos, planejados de forma individualizada para garantir segurança e harmonia.</p>
 
 <p>Indicações: flacidez facial, perda do contorno da mandíbula, queda do terço médio da face e definição do pescoço.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre os Fios PDO." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre os Fios PDO." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
 
@@ -524,7 +580,10 @@
                     <h3>Preenchimentos Faciais (Harmonização Facial)</h3>
                     <p>Os preenchimentos faciais com ácido hialurônico são utilizados para restaurar volumes, definir contornos e melhorar a simetria do rosto. </p>
                   <p>A harmonização facial é planejada de forma personalizada, respeitando as proporções faciais e buscando resultados naturais e sofisticados.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre a Toxina Botulínica." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre a Toxina Botulínica." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
 
@@ -539,7 +598,10 @@
                 <div class="service-info">
                     <h3>Preenchimentos Corporais – Glúteos e Região Íntima</h3>
                     <p>Procedimentos indicados para melhora do contorno, volume e estética corporal. </p> <p>As técnicas são realizadas de forma individualizada, respeitando critérios de segurança, proporção e funcionalidade, promovendo resultados harmônicos e elegantes.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre a Harmonização Facial." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre a Harmonização Facial." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
 
@@ -554,7 +616,10 @@
                 <div class="service-info">
                     <h3>Skinbooster</h3>
                     <p>O Skinbooster é um tratamento injetável voltado para hidratação profunda da pele, melhora da elasticidade, textura e viço. </p><p>Indicado para rejuvenescimento sutil e prevenção do envelhecimento cutâneo, proporcionando aparência saudável e natural.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
                       <!-- Service 6 -->
@@ -570,7 +635,10 @@
                     <p>O Protocolo New Skin é um tratamento exclusivo voltado para a melhora global da qualidade da pele.</p><p> Atua no tratamento de manchas solares, melasma, acne ativa e cicatrizes de acne, promovendo uniformização do tom, renovação celular e saúde cutânea.
 </p><p>Cada protocolo é desenvolvido após avaliação individual, respeitando as necessidades específicas de cada paciente.
 </p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
                       <!-- Service 7 -->
@@ -584,7 +652,10 @@
                 <div class="service-info">
                     <h3>Endolifting Facial e Corporal</h3>
                     <p>O Endolifting é um procedimento minimamente invasivo indicado para gordura localizada, flacidez facial e corporal.</p><p> Atua estimulando o colágeno e promovendo retração da pele, melhorando o contorno e a firmeza de forma progressiva e natural e ajudando na redução da gordura localizada por lipólise.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
                       <!-- Service 8 -->
@@ -598,11 +669,55 @@
                 <div class="service-info">
                     <h3>Bioestimuladores de Colágeno</h3>
                     <p>Os bioestimuladores de colágeno promovem firmeza, sustentação e rejuvenescimento da pele por meio da estimulação natural do colágeno. </p><p>Indicados para face e corpo, oferecem resultados graduais, duradouros e naturais.</p>
-                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank">Saiba mais</a>
+                    <a href="https://wa.me/5563999610812?text=Olá! Gostaria de saber mais sobre o Endolifting." class="btn" target="_blank"onclick="gtag('event','conversion',{'send_to':'AW-123456789/SERVICO123'})"
+>
+  Saiba mais
+</a>
                 </div>
             </div>
         </div>
     </section>
+  
+  <!-- Clientes -->
+<section id="clientes" class="section" style="background:#f9f9f9">
+    <h2 class="section-title">O que nossos clientes dizem</h2>
+
+    <!-- Vídeo YouTube -->
+    <div style="max-width:800px;margin:0 auto 3rem;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.15)">
+        <iframe 
+            width="100%" 
+            height="450"
+            src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+            title="Depoimento de Cliente"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Carrossel de Depoimentos -->
+    <div class="testimonials-carousel">
+
+        <div class="testimonial active">
+            <p>“Atendimento impecável! Me senti segura desde a avaliação até o resultado final.”</p>
+            <h4>— Mariana A.</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>“Resultado extremamente natural. Superou todas as minhas expectativas.”</p>
+            <h4>— Fernanda S.</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>“Profissionalismo, técnica e cuidado. Recomendo de olhos fechados.”</p>
+            <h4>— Carla M.</h4>
+        </div>
+
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+
+    </div>
+</section>
 
     <!-- FAQ -->
     <section id="duvidas" class="section faq-section">
@@ -678,9 +793,14 @@
                 <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
             </div>
 
-            <a href="https://maps.app.goo.gl/1aHTMr9ztfsWpU1a6" target="_blank" class="btn">
-                Abrir no Google Maps
-            </a>
+<a 
+  href="https://maps.app.goo.gl/1aHTMr9ztfsWpU1a6"
+  target="_blank"
+  class="btn"
+  onclick="gtag('event','conversion',{'send_to':'AW-123456789/MAPS123'})"
+>
+  Abrir no Google Maps
+</a>
         </div>
 
         <div class="map-container">
@@ -729,96 +849,151 @@
         <p class="copyright">© 2026 Ricardo Ramos Estética Avançada. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/5563999610812" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<!-- WhatsApp Float -->
+<a 
+    href="https://wa.me/5563999610812"
+    class="whatsapp-float"
+    target="_blank"
+    onclick="gtag('event','conversion',{'send_to':'AW-123456789/WHATS123'})"
+>
+    <i class="fab fa-whatsapp"></i>
+</a>
+<script>
+    /* ============================
+       Mobile Menu Toggle
+    ============================ */
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-    <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+    menuToggle?.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 
-        menuToggle?.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
         });
+    });
 
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
+    /* ============================
+       Carrossel de Imagens (Serviços / Local)
+    ============================ */
+    class Carousel {
+        constructor(element) {
+            this.element = element;
+            this.slides = element.querySelectorAll('.carousel-slide');
+            this.prevBtn = element.querySelector('.prev');
+            this.nextBtn = element.querySelector('.next');
+            this.currentIndex = 0;
 
-        // Carousel
-        class Carousel {
-            constructor(element) {
-                this.element = element;
-                this.slides = element.querySelectorAll('.carousel-slide');
-                this.prevBtn = element.querySelector('.prev');
-                this.nextBtn = element.querySelector('.next');
-                this.currentIndex = 0;
-                
-                if (this.slides.length > 0) {
-                    this.slides[0].classList.add('active');
-                    if (this.prevBtn && this.nextBtn) {
-                        this.prevBtn.addEventListener('click', () => this.prev());
-                        this.nextBtn.addEventListener('click', () => this.next());
-                    }
-                    setInterval(() => this.next(), 5000);
-                }
-            }
+            if (this.slides.length > 0) {
+                this.slides[0].classList.add('active');
 
-            show(index) {
-                this.slides.forEach(s => s.classList.remove('active'));
-                this.slides[index].classList.add('active');
-            }
+                this.prevBtn?.addEventListener('click', () => this.prev());
+                this.nextBtn?.addEventListener('click', () => this.next());
 
-            next() {
-                this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-                this.show(this.currentIndex);
-            }
-
-            prev() {
-                this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-                this.show(this.currentIndex);
+                setInterval(() => this.next(), 5000);
             }
         }
 
-        document.querySelectorAll('.carousel').forEach(el => new Carousel(el));
+        show(index) {
+            this.slides.forEach(s => s.classList.remove('active'));
+            this.slides[index].classList.add('active');
+        }
 
-        // Accordion
-        document.querySelectorAll('.accordion-item').forEach(item => {
-            const header = item.querySelector('.accordion-header');
-            header.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                
-                document.querySelectorAll('.accordion-item').forEach(i => {
-                    i.classList.remove('active');
-                    i.querySelector('.accordion-body').style.maxHeight = null;
-                });
+        next() {
+            this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+            this.show(this.currentIndex);
+        }
 
-                if (!isActive) {
-                    item.classList.add('active');
-                    const body = item.querySelector('.accordion-body');
-                    body.style.maxHeight = body.scrollHeight + "px";
-                }
+        prev() {
+            this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+            this.show(this.currentIndex);
+        }
+    }
+
+    document.querySelectorAll('.carousel').forEach(el => new Carousel(el));
+
+    /* ============================
+       Accordion (FAQ)
+    ============================ */
+    document.querySelectorAll('.accordion-item').forEach(item => {
+        const header = item.querySelector('.accordion-header');
+
+        header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            document.querySelectorAll('.accordion-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-body').style.maxHeight = null;
             });
-        });
 
-        // Contact Form → WhatsApp
-        document.getElementById('contactForm')?.addEventListener('submit', e => {
-            e.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            
-            if (!name || !email.includes('@')) {
-                alert('Por favor, preencha nome e um e-mail válido!');
-                return;
+            if (!isActive) {
+                item.classList.add('active');
+                const body = item.querySelector('.accordion-body');
+                body.style.maxHeight = body.scrollHeight + 'px';
             }
-
-            const message = `Olá! Meu nome é *${name}* (${email}). Gostaria de agendar uma avaliação na clínica.`;
-            window.open(`https://wa.me/5563999610812?text=${encodeURIComponent(message)}`, '_blank');
         });
+    });
+
+    /* ============================
+       Formulário → WhatsApp
+    ============================ */
+    document.getElementById('contactForm')?.addEventListener('submit', e => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        if (!name || !email.includes('@')) {
+            alert('Por favor, preencha nome e um e-mail válido!');
+            return;
+        }
+const message = `Olá! Meu nome é *${name}* (${email}). Gostaria de agendar uma avaliação na clínica.`;
+
+// Conversão Google Ads - Agendar Avaliação
+gtag('event', 'conversion', {
+    'send_to': 'AW-123456789/AGENDA123'
+});
+
+// Abre o WhatsApp
+window.open(
+    `https://wa.me/5563999610812?text=${encodeURIComponent(message)}`,
+    '_blank'
+);
+
+        );
+    });
+
+    /* ============================
+       Carrossel de Depoimentos (Clientes)
+    ============================ */
+    const testimonials = document.querySelectorAll('#clientes .testimonial');
+    let testimonialIndex = 0;
+
+    function showTestimonial(index) {
+        testimonials.forEach(t => t.classList.remove('active'));
+        testimonials[index].classList.add('active');
+    }
+
+    document.querySelector('#clientes .next')?.addEventListener('click', () => {
+        testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+        showTestimonial(testimonialIndex);
+    });
+
+    document.querySelector('#clientes .prev')?.addEventListener('click', () => {
+        testimonialIndex =
+            (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(testimonialIndex);
+    });
+
+    setInterval(() => {
+        testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+        showTestimonial(testimonialIndex);
+    }, 6000);
+</script>
+
+      
     </script>
 </body>
 
