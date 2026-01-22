@@ -486,6 +486,51 @@
     color: var(--primary-color);
     font-weight: 700;
 }
+      
+      /* Instagram Section */
+.instagram-section {
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.instagram-subtitle {
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.instagram-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.instagram-preview img {
+    width: 100%;
+    border-radius: 20px;
+    transition: var(--transition);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.instagram-preview img:hover {
+    transform: scale(1.05);
+}
+
+.instagram-btn {
+    padding: 14px 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .instagram-preview {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -850,6 +895,37 @@
             </form>
         </div>
     </section>
+  
+  <!-- Instagram -->
+<section class="section instagram-section">
+    <h2 class="section-title">Acompanhe no Instagram</h2>
+
+    <p class="instagram-subtitle">
+        Conteúdos reais, resultados naturais e bastidores da estética avançada.
+    </p>
+
+    <div class="instagram-preview">
+        <a href="https://www.instagram.com/drricardoramosbio/" target="_blank">
+            <img src="https://convidatasshop.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-22-at-09.20.30.jpeg?w=563" alt="Instagram post 1">
+        </a>
+        <a href="https://www.instagram.com/drricardoramosbio/" target="_blank">
+            <img src="https://convidatasshop.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-22-at-09.20.31.jpeg?w=624" alt="Instagram post 2">
+        </a>
+        <a href="https://www.instagram.com/drricardoramosbio/" target="_blank">
+            <img src="https://convidatasshop.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-22-at-09.20.30.jpeg?w=563" alt="Instagram post 3">
+        </a>
+    </div>
+
+    <a 
+        href="https://www.instagram.com/drricardoramosbio/" 
+        target="_blank"
+        class="btn instagram-btn"
+        onclick="gtag('event','conversion',{'send_to':'AW-123456789/INSTA123'})"
+    >
+        Seguir no Instagram
+    </a>
+</section>
+
 
     <!-- Footer -->
     <footer>
